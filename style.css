@@ -1,0 +1,666 @@
+/* ---------- Global styles ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ---------- Header ---------- */
+#iiii {
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 4%;
+}
+
+.c1 {
+    font-size: clamp(18px, 2vw, 26px);
+}
+
+.qqq3 {
+    flex: 1;
+    max-width: 430px;
+}
+
+.qqq3 input {
+    width: 100%;
+    min-width: 0;
+    height: 40px;
+    padding: 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline-offset: 2px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+header hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 0;
+}
+
+.Categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 4%;
+}
+
+.Categories h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.ul1 ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px 22px;
+    list-style: none;
+}
+
+.ul1 li {
+    font-size: 14px;
+}
+
+.Categories > div:last-child {
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+/* ---------- Hero banner ---------- */
+.main-img img {
+    width: 100%;
+    height: clamp(200px, 36vw, 450px);
+    object-fit: cover;
+    object-position: center;
+}
+
+.c2 {
+    text-align: center;
+    font-size: clamp(20px, 2.5vw, 26px);
+    line-height: 1.4;
+    margin: 28px 0 12px;
+    padding: 0 12px;
+}
+
+.c3 {
+    text-align: center;
+    color: #777;
+    line-height: 1.7;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+}
+
+/* ---------- Main content ---------- */
+.main-div {
+    padding: 10px 4%;
+    width: 100%;
+}
+
+.c4 {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 24px;
+    text-align: center;
+    align-items: start;
+    margin: 30px 0;
+}
+
+.c4 > div {
+    min-width: 0;
+}
+
+#i1, #i2, #i3, #i4, #i5, #i6 {
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    object-fit: contain;
+    margin: auto;
+}
+
+.c5 {
+    padding: 0;
+    margin: 8px 0;
+}
+
+/* ---------- Promotional cards ---------- */
+.c6 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.c6 > div {
+    min-width: 0;
+    position: relative;
+    min-height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.c7 {
+    width: 100%;
+    height: 100%;
+}
+
+.p1, .p2, .p3 {
+    min-height: 240px;
+}
+
+.c8 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.c8 img,
+.c9 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    position: relative;
+    z-index: 1;
+    padding: 24px;
+    font-size: clamp(14px, 1.4vw, 18px);
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+.c10 {
+    color: blue;
+}
+
+/* ---------- Section headings ---------- */
+.c11,
+.c14,
+.c18 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 0;
+}
+
+.c11 {
+    background: white;
+}
+
+.c11 .c1,
+.c18 .c1 {
+    margin: 8px 0;
+}
+
+.c12 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 20px;
+    list-style: none;
+    font-size: 14px;
+}
+
+.c14 {
+    background: lightgrey;
+    padding: 16px 4%;
+}
+
+.c14 p {
+    margin: 0;
+}
+
+.inline_css_15,
+.c14 ul {
+    list-style: none;
+}
+
+/* ---------- New arrivals ---------- */
+.c13 {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+    text-align: center;
+    align-items: start;
+    margin: 20px 0 35px;
+}
+
+.c13 > div {
+    min-width: 0;
+}
+
+#i7, #i8, #i9, #i10, #i11 {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* ---------- Trending products ---------- */
+.c16 {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+    text-align: center;
+    background: lightgrey;
+    padding: 20px 4% 35px;
+}
+
+.c16 > div {
+    min-width: 0;
+}
+
+#i12 {
+    width: 100%;
+    height: 238px;
+    object-fit: cover;
+}
+
+#i13, #i14, #i15, #i16 {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.c17 {
+    background: white;
+    padding: 8px;
+    height: 100%;
+}
+
+/* ---------- Recommendations ---------- */
+.recommendations {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 32px 24px;
+    padding: 20px 4%;
+}
+
+.recommendation-card {
+    min-width: 0;
+    text-align: center;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.recommendation-card img {
+    width: 100%;
+    max-width: 230px;
+    height: 210px;
+    object-fit: contain;
+    margin: 0 auto 8px;
+}
+
+.recommendation-card p {
+    margin: 0 0 8px;
+    min-height: 36px;
+    line-height: 1.5;
+}
+
+/* ---------- Newsletter ---------- */
+.nbv {
+    background-image: url("./images/bdhnt.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    padding: 40px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.c19 {
+    width: 100%;
+}
+
+.c19 > div {
+    width: 100%;
+    max-width: 850px;
+}
+
+.c20 {
+    font-size: clamp(24px, 4vw, 30px);
+    color: white;
+    font-weight: bold;
+}
+
+.c21 {
+    font-size: clamp(15px, 2vw, 20px);
+    line-height: 1.6;
+    color: white;
+}
+
+.c22 {
+    display: block;
+    width: 100%;
+    max-width: 460px;
+    height: 48px;
+    padding: 0 18px;
+    margin: 20px auto 0;
+    border: 0;
+    border-radius: 32px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 28px;
+    padding: 40px 4%;
+}
+
+.footer1 {
+    min-width: 0;
+}
+
+.footer1 h3 {
+    margin: 0 0 15px;
+    font-size: 18px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+.footer1 ul {
+    list-style: none;
+    line-height: 1.8;
+}
+
+.footer1 li {
+    color: grey;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+/* ---------- Tablets ---------- */
+@media (max-width: 1024px) {
+    .Categories {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Categories > div {
+        min-width: 0;
+    }
+
+    .c4 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 28px 16px;
+    }
+
+    .c13,
+    .c16 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .c16 > div:first-child {
+        grid-column: span 3;
+    }
+
+    #i12 {
+        height: 260px;
+        object-fit: contain;
+    }
+
+    .recommendations {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .footer {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* ---------- Mobile phones ---------- */
+@media (max-width: 600px) {
+    #iiii {
+        padding: 14px 4%;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    #iiii .c1 {
+        flex: 1;
+        font-size: 17px;
+    }
+
+    .qqq3 {
+        display: block;
+        order: 3;
+        flex: 0 0 100%;
+        max-width: none;
+    }
+
+    .qqq3 input {
+        height: 40px;
+    }
+
+    .icons {
+        gap: 14px;
+        font-size: 18px;
+    }
+
+    header > nav {
+        display: none;
+    }
+
+    .main-img img {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .c2 {
+        font-size: 20px;
+        margin-top: 22px;
+    }
+
+    .c3 {
+        font-size: 14px;
+        padding: 0 16px;
+    }
+
+    .main-div {
+        padding: 8px 4%;
+    }
+
+    .c4 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px 10px;
+    }
+
+    #i1, #i2, #i3, #i4, #i5, #i6 {
+        width: 75px;
+        height: 75px;
+    }
+
+    .c4 p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .c6 {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .c6 > div {
+        min-height: 220px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .c11,
+    .c14,
+    .c18 {
+        align-items: flex-start;
+    }
+
+    .c11 {
+        flex-direction: column;
+    }
+
+    .c12 {
+        gap: 10px 14px;
+    }
+
+    .c13 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px 12px;
+        font-size: 14px;
+    }
+
+    #i7, #i8, #i9, #i10, #i11 {
+        height: 150px;
+    }
+
+    .c14 {
+        padding: 14px 4%;
+    }
+
+    .c16 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px 10px;
+        padding: 16px 4% 25px;
+        font-size: 13px;
+    }
+
+    .c16 > div:first-child {
+        grid-column: span 2;
+    }
+
+    #i12 {
+        height: auto;
+        max-height: 240px;
+    }
+
+    #i13, #i14, #i15, #i16 {
+        height: 145px;
+    }
+
+    .recommendations {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 26px 12px;
+        padding: 16px 4%;
+    }
+
+    .recommendation-card img {
+        height: 150px;
+    }
+
+    .recommendation-card {
+        font-size: 13px;
+    }
+
+    .c18 {
+        padding: 12px 4%;
+    }
+
+    .c18 .c12 {
+        font-size: 13px;
+    }
+
+    .nbv {
+        min-height: 260px;
+        padding: 30px 5%;
+    }
+
+    .c20 {
+        font-size: 24px;
+    }
+
+    .c21 {
+        font-size: 14px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px 18px;
+        padding: 30px 5%;
+    }
+
+    .footer1 h3 {
+        font-size: 16px;
+    }
+
+    .footer1 li {
+        font-size: 13px;
+    }
+}
+
+/* ---------- Very small phones ---------- */
+@media (max-width: 360px) {
+    .c1 {
+        font-size: 15px;
+    }
+
+    .icons {
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .c4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .recommendations,
+    .c13,
+    .c16,
+    .footer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+        padding: 16px;
+    }
+}
